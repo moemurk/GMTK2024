@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://b2b4cgoktdi0r"]
+
+[ext_resource type="Texture2D" uid="uid://r6tue4shm14x" path="res://assets/images/tiles2.png" id="1_qsurt"]
+[ext_resource type="Script" path="res://AutoGenTileMap.gd" id="2_i3g3v"]
+[ext_resource type="Script" path="res://scenes/TestCameraController.gd" id="3_le2ge"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pg7a3"]
+texture = ExtResource("1_qsurt")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_xxp3l"]
+sources/0 = SubResource("TileSetAtlasSource_pg7a3")
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_xxp3l")
+format = 2
+script = ExtResource("2_i3g3v")
+width = 2048
+height = 2048
+
+[node name="Camera" type="Camera2D" parent="."]
+position = Vector2(15938, 10690)
+zoom = Vector2(0.35, 0.35)
+script = ExtResource("3_le2ge")
