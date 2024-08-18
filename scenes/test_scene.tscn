@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://b2b4cgoktdi0r"]
 
 [ext_resource type="Texture2D" uid="uid://r6tue4shm14x" path="res://assets/images/tiles2.png" id="1_qsurt"]
-[ext_resource type="Script" path="res://AutoGenTileMap.gd" id="2_i3g3v"]
-[ext_resource type="Script" path="res://scenes/TestCameraController.gd" id="3_le2ge"]
+[ext_resource type="Script" path="res://Scripts/AutoGenTileMap.gd" id="2_i3g3v"]
+[ext_resource type="Script" path="res://Scripts/TestCameraController.gd" id="3_le2ge"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pg7a3"]
 texture = ExtResource("1_qsurt")
